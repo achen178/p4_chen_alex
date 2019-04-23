@@ -76,3 +76,33 @@ anime.timeline({loop: false})
   jsMenuNode.querySelector('.js-menu__toggle').addEventListener('click', callMenuToggle);
 })();
 // end-----N A V I G A T I O N -------
+// start---B A R --- C H A R T -------
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	axisX:{
+		interval: 1
+	},
+	axisY2:{
+		gridColor: "rgba(1,77,101,.1)",
+	},
+	data: [{
+		type: "bar",
+		name: "companies",
+		axisYType: "secondary",
+		color: "#e1737a",
+		dataPoints: [
+			{ y: 95, label: "HP" },
+			{ y: 60, label: "Attack" },
+			{ y: 79, label: "Defense" },
+			{ y: 100, label: "Sp. Atk" },
+			{ y: 125, label: "Sp. Def" },
+			{ y: 81, label: "Speed" },
+		]
+	}]
+});
+chart.render();
+
+}
+// end-----B A R --- C H A R T -------

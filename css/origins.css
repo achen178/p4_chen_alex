@@ -1,58 +1,47 @@
 * {
-  margin: 0;
-  padding: 0;
-  border: 0;
+	margin: 0;
+	padding: 0;
+	border: 0;
 }
 
 article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
-  display:block;
+	display:block;
 }
 /*-----------------------------------
 ...............HEADER.................
 ----------------------------------- */
-body{
-  background: #e1737a;
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  font-family: "Playfair Display", serif;
-}
 header{
-  display:flex;
+  background: url(../imgs/background.jpg);
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 .ml16 {
   color: white;
   padding: 40px 0 0 0;
   font-family: "Playfair Display", serif;
   font-weight: 900;
-  font-size: 2em;
+  font-size: 2.3em;
   text-transform: uppercase;
   letter-spacing: .5em;
   overflow: hidden;
-  margin: 3rem 0 0 .5em;
+  margin-left: .5em;
 	text-shadow: 1px 1px 3px #282828;
 }
 .ml16 .letter {
   display: inline-block;
   line-height: 1em;
 }
-.logobox{
-  width: 120px;
-  height: 60px;
-  position: fixed;
-  top: 0;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 0 2px 2px 2px;
-  border-radius: 0 0 400px 400px
+header h2{
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 700;
+  color: #e1737a;
+  font-size: 1em;
+	letter-spacing: 1em;
+	margin-left: .5em;
 }
-#logo{
-  width: 60px;
-  margin: 10px 0 0 0;
-}
+
 /*...............NAV................
 https://codepen.io/melnik909/pen/JpJPYp
 ....................................*/
@@ -81,12 +70,12 @@ nav a{
 
 .link{
   color: inherit;
-  padding-left: 30px;
-  border: 0 #e1737a solid;
-  transition: border .5s cubic-bezier(.56,.02,.51,.99);
+	padding-left: 30px;
+	border: 0 #e1737a solid;
+	transition: border .5s cubic-bezier(.56,.02,.51,.99);
 }
 .link:hover{
-  border-left: 30px #e1737a solid;
+	border-left: 30px #e1737a solid;
 }
 
 .list{
@@ -150,7 +139,7 @@ LEVEL 2. MENU STYLES
   padding: .5rem 3rem;
   font-size: 2rem;
   font-weight: 700;
-  font-family: "Lato", sans-serif;
+	font-family: "Lato", sans-serif;
   text-transform: uppercase;
 }
 
@@ -281,8 +270,8 @@ LEVEL 3. MOBILE ANIMATION STYLES
 .hamburger:before{
   will-change: width, height;
   transition: transform .3s cubic-bezier(0.04, -0.1, 0.29, 0.98),
-  width .3s cubic-bezier(0.04, -0.1, 0.29, 0.98),
-  height .3s cubic-bezier(0.04, -0.1, 0.29, 0.98);
+    width .3s cubic-bezier(0.04, -0.1, 0.29, 0.98),
+    height .3s cubic-bezier(0.04, -0.1, 0.29, 0.98);
 }
 
 .js-menu_activated .hamburger:before{
@@ -320,77 +309,30 @@ SETTINGS
 /* -----------------------------------
 ...............LAYOUT.................
 ----------------------------------- */
-main{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 2rem 0 0 0;
-}
-.poke-screen{
-  width: 40%;
-  max-width: 250px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #7bc3e1;
-  border: 10px white solid;
-  border-radius: 1rem;
-  margin: 0 0 0 2rem;
-}
-.poke-screen:after {
-  content: "";
-  display: block;
-  padding-bottom: 100%;
-}
-.ui-elements{
-  display: flex;
-  flex-direction: row-reverse;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
-  width: 60%;
-}
 img{
-  width: 70%;
-  max-width: 200px;
+  width: 80%;
+	max-width: 300px;
 }
-.dpad{
-  width: 30%;
-  max-width: 150px;
+.logobox{
+	width: 120px;
+	height: 60px;
+	position: fixed;
+	top: 0;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 0 2px 2px 2px;
+	border-radius: 0 0 400px 400px
 }
-.border-div{
-  border: 10px white solid;
-  border-radius: 1rem;
-  overflow: hidden;
-  margin: 3%;
-  max-width: 900px;
-}
-.poke-info{
-  max-height: 50vh;
-  overflow-y: auto;
-  background-color: #282828;
-  color: #eaeaea;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 3% 0;
-  margin: 0;
-}
-.poke-info h4{
-  width: 100%;
-  text-align: left;
-  margin: 1rem .2rem .2rem .2rem;
-}
-.poke-info p{
-  width: 100%;
-  margin: .2rem;
+#logo{
+	width: 60px;
+	margin: 10px 0 0 0;
 }
 /* -----------------------------------
 .............TYPOGRAPHY...............
 ----------------------------------- */
-p{
-  font-family: "Lato", sans-serif;
-  font-size: .9rem;
-}
+
 
 /* -----------------------------------
 ................MISC..................
@@ -410,45 +352,13 @@ p{
 /* -----------------------------------
 ...........MEDIA QUERIES..............
 ----------------------------------- */
-@media (min-width: 625px) {
-  .poke-info h4{
-    width: 20%;
-    text-align: right;
-    margin: 1rem .2rem;
-  }
-  .poke-info p{
-    width: 70%;
-    margin: 1rem .2rem;
-  }
-}
-@media (min-width: 780px) {
+@media (min-width: 750px) {
 	.ml16{
 		font-size: 3.6em;
 		letter-spacing: 1em;
 		margin-left: 1em;
 	}
-@media (min-width: 900px) {
-  main{
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: center;
-  }
-  .ui-elements{
-    flex-direction: column;
-    width: 30%;
-    align-items: flex-end;
-    margin: 3% 0;
-  }
-  .poke-screen{
-    width: 100%;
-    border-radius: 2rem;
-  }
-  .dpad{
-    width: 50%;
-    margin: 10%;
-  }
-  .border-div{
-    border-radius: 2rem;
-    width: 60%;
-  }
+	header h2{
+		font-size: 2rem;
+	}
 }
