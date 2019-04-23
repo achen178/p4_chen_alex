@@ -1,11 +1,11 @@
 * {
-	margin: 0;
-	padding: 0;
-	border: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
-	display:block;
+  display:block;
 }
 /*-----------------------------------
 ...............HEADER.................
@@ -22,20 +22,20 @@ header{
   justify-content: center;
 }
 .logobox{
-	width: 120px;
-	height: 60px;
-	position: fixed;
-	top: 0;
-	background-color: white;
-	display: flex;
-	justify-content: center;
-	align-items: flex-start;
-	padding: 0 2px 2px 2px;
-	border-radius: 0 0 400px 400px
+  width: 120px;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 2px 2px 2px;
+  border-radius: 0 0 400px 400px
 }
 #logo{
-	width: 60px;
-	margin: 10px 0 0 0;
+  width: 60px;
+  margin: 10px 0 0 0;
 }
 /*...............NAV................
 https://codepen.io/melnik909/pen/JpJPYp
@@ -65,12 +65,12 @@ nav a{
 
 .link{
   color: inherit;
-	padding-left: 30px;
-	border: 0 #e1737a solid;
-	transition: border .5s cubic-bezier(.56,.02,.51,.99);
+  padding-left: 30px;
+  border: 0 #e1737a solid;
+  transition: border .5s cubic-bezier(.56,.02,.51,.99);
 }
 .link:hover{
-	border-left: 30px #e1737a solid;
+  border-left: 30px #e1737a solid;
 }
 
 .list{
@@ -134,7 +134,7 @@ LEVEL 2. MENU STYLES
   padding: .5rem 3rem;
   font-size: 2rem;
   font-weight: 700;
-	font-family: "Lato", sans-serif;
+  font-family: "Lato", sans-serif;
   text-transform: uppercase;
 }
 
@@ -265,8 +265,8 @@ LEVEL 3. MOBILE ANIMATION STYLES
 .hamburger:before{
   will-change: width, height;
   transition: transform .3s cubic-bezier(0.04, -0.1, 0.29, 0.98),
-    width .3s cubic-bezier(0.04, -0.1, 0.29, 0.98),
-    height .3s cubic-bezier(0.04, -0.1, 0.29, 0.98);
+  width .3s cubic-bezier(0.04, -0.1, 0.29, 0.98),
+  height .3s cubic-bezier(0.04, -0.1, 0.29, 0.98);
 }
 
 .js-menu_activated .hamburger:before{
@@ -308,6 +308,7 @@ main{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 5rem 0 0 0;
 }
 .poke-screen{
   width: 40%;
@@ -317,7 +318,7 @@ main{
   align-items: center;
   background-color: #7bc3e1;
   border: 10px white solid;
-  border-radius: 10%;
+  border-radius: 1rem;
   margin: 0 0 0 2rem;
 }
 .poke-screen:after {
@@ -331,7 +332,6 @@ main{
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  margin: 5rem 0 0 0;
 }
 img{
   width: 70%;
@@ -341,18 +341,23 @@ img{
   width: 30%;
   max-width: 150px;
 }
+.border-div{
+  border: 10px white solid;
+  border-radius: 1rem;
+  overflow: hidden;
+  margin: 3%;
+}
 .poke-info{
   max-height: 50vh;
   max-width: 900px;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  overflow-y: auto;
   background-color: #282828;
-  border: 10px white solid;
   color: #eaeaea;
   display: flex;
   flex-wrap: wrap;
   padding: 3%;
-  margin: 3%;
+  margin: 0;
+  width: 100%;
 }
 .poke-info h4{
   width: 100%;
@@ -374,18 +379,6 @@ p{
 /* -----------------------------------
 ................MISC..................
 ----------------------------------- */
-::-webkit-scrollbar {
-  width: 10px;
-}
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-::-webkit-scrollbar-thumb {
-  background: linear-gradient(#7bc3e1,#54a4c6);
-}
-::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(#54a4c6,#7bc3e1);
-}
 /* -----------------------------------
 ...........MEDIA QUERIES..............
 ----------------------------------- */
@@ -401,5 +394,27 @@ p{
   }
 }
 @media (min-width: 820px) {
-
+  main{
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  .ui-elements{
+    flex-direction: column;
+    width: 30%;
+    align-items: flex-end;
+    margin: 3% 0;
+  }
+  .poke-screen{
+    width: 100%;
+    border-radius: 2rem;
+  }
+  .dpad{
+    width: 50%;
+    margin: 10%;
+  }
+  .border-div{
+    border-radius: 2rem;
+    /* width: 60%; */
+  }
 }
