@@ -81,6 +81,11 @@ window.onload = function () {
 
 var chart = new CanvasJS.Chart("chartContainer", {
 	animationEnabled: true,
+  title:{
+		text:"Base Stats",
+    fontFamily: "Lato",
+    horizontalAlign: "right"
+	},
 	axisX:{
 		interval: 1
 	},
@@ -88,8 +93,9 @@ var chart = new CanvasJS.Chart("chartContainer", {
 		gridColor: "rgba(1,77,101,.1)",
 	},
 	data: [{
+    indexLabelFontFamily: "Lato",
 		type: "bar",
-		name: "companies",
+		name: "stats",
 		axisYType: "secondary",
 		color: "#e1737a",
 		dataPoints: [

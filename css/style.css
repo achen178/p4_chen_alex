@@ -11,36 +11,36 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 ...............HEADER.................
 ----------------------------------- */
 header{
-  background: url(../imgs/background.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	background: url(../imgs/background.jpg);
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 .ml16 {
-  color: white;
-  padding: 40px 0 0 0;
-  font-family: "Playfair Display", serif;
-  font-weight: 900;
-  font-size: 2.3em;
-  text-transform: uppercase;
-  letter-spacing: .5em;
-  overflow: hidden;
-  margin-left: .5em;
+	color: white;
+	padding: 40px 0 0 0;
+	font-family: "Playfair Display", serif;
+	font-weight: 900;
+	font-size: 2.3em;
+	text-transform: uppercase;
+	letter-spacing: .5em;
+	overflow: hidden;
+	margin-left: .5em;
 	text-shadow: 1px 1px 3px #282828;
 }
 .ml16 .letter {
-  display: inline-block;
-  line-height: 1em;
+	display: inline-block;
+	line-height: 1em;
 }
 header h2{
-  font-family: "Noto Sans JP", sans-serif;
-  font-weight: 700;
-  color: #e1737a;
-  font-size: 1em;
+	font-family: "Noto Sans JP", sans-serif;
+	font-weight: 700;
+	color: #e1737a;
+	font-size: 1em;
 	letter-spacing: 1em;
 	margin-left: .5em;
 }
@@ -55,24 +55,24 @@ LEVEL 1. RESET STYLES
 */
 
 button{
-  border: none;
-  background-color: transparent;
-  padding: 0;
-  font-family: inherit;
+	border: none;
+	background-color: transparent;
+	padding: 0;
+	font-family: inherit;
 }
 
 .button{
-  cursor: pointer;
-  color: var(--colorWhite);
+	cursor: pointer;
+	color: var(--colorWhite);
 }
 
 nav a{
-  display:inline-block;
-  text-decoration: none;
+	display:inline-block;
+	text-decoration: none;
 }
 
 .link{
-  color: inherit;
+	color: inherit;
 	padding-left: 30px;
 	border: 0 #e1737a solid;
 	transition: border .5s cubic-bezier(.56,.02,.51,.99);
@@ -82,10 +82,10 @@ nav a{
 }
 
 .list{
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
-  list-style: none;
+	padding-left: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	list-style: none;
 }
 
 /*
@@ -97,161 +97,161 @@ LEVEL 2. MENU STYLES
 /* menu */
 
 .nav-button{
-  box-sizing: border-box;
-  width: 100%;
-  color: var(--colorWhite);
+	box-sizing: border-box;
+	width: 100%;
+	color: var(--colorWhite);
 
-  display: flex;
-  justify-content: center;
+	display: flex;
+	justify-content: center;
 
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  z-index: 9998;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	z-index: 9998;
 }
 
 .menu{
-  box-sizing: border-box;
-  width: 100%;
-  padding-bottom: 55px;
+	box-sizing: border-box;
+	width: 100%;
+	padding-bottom: 55px;
 
-  height: 0;
-  transform: translate3d(0, -100%, 0);
-  opacity: 0;
+	height: 0;
+	transform: translate3d(0, -100%, 0);
+	opacity: 0;
 
-  display: flex;
-  align-items: flex-end;
+	display: flex;
+	align-items: flex-end;
 
-  position: fixed;
-  top: 0;
-  left: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
 }
 
 .menu__list{
-  box-sizing: border-box;
-  width: 100%;
-  max-height: 100%;
-  display: none;
+	box-sizing: border-box;
+	width: 100%;
+	max-height: 100%;
+	display: none;
 
-  padding-top: 30px;
-  overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
+	padding-top: 30px;
+	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
 }
 
 .menu__group{
-  padding: .5rem 3rem;
-  font-size: 2rem;
-  font-weight: 700;
+	padding: .5rem 3rem;
+	font-size: 2rem;
+	font-weight: 700;
 	font-family: "Lato", sans-serif;
-  text-transform: uppercase;
+	text-transform: uppercase;
 }
 
 .menu__group_active{
-  background-color: var(--colorWhite);
-  color: var(--colorBlack);
+	background-color: var(--colorWhite);
+	color: var(--colorBlack);
 }
 
 .menu__item{
-  padding: 8px 25px;
-  display: block;
+	padding: 8px 25px;
+	display: block;
 }
 
 /* hamburger */
 
 .hamburger{
-  position: relative;
-  line-height: 1;
-  padding-bottom: .5em;
+	position: relative;
+	line-height: 1;
+	padding-bottom: .5em;
 }
 
 .hamburger:before{
-  content :"";
-  width: 100px;
-  height: 100px;
-  background-color: var(--colorMain);
-  border-radius: 50%;
+	content :"";
+	width: 100px;
+	height: 100px;
+	background-color: var(--colorMain);
+	border-radius: 50%;
 
-  position: absolute;
-  bottom: -55px;
-  left: -35px;
+	position: absolute;
+	bottom: -55px;
+	left: -35px;
 }
 
 .hamburger__button{
-  width: 1.4em;
-  height: 1em;
-  font-size: 20px;
+	width: 1.4em;
+	height: 1em;
+	font-size: 20px;
 
-  position: relative;
-  text-indent: -9999px;
-  z-index: 2;
+	position: relative;
+	text-indent: -9999px;
+	z-index: 2;
 }
 
 .hamburger__button:before, .hamburger__button:after, .hamburger__label{
-  width: 100%;
-  height: 20%;
-  border-radius: 5px;
-  background-color: currentColor;
+	width: 100%;
+	height: 20%;
+	border-radius: 5px;
+	background-color: currentColor;
 
-  position: absolute;
-  left: 0;
+	position: absolute;
+	left: 0;
 }
 
 .hamburger__button:before, .hamburger__button:after{
-  content:"";
+	content:"";
 }
 
 .hamburger__button:before{
-  top: 0;
+	top: 0;
 }
 
 .hamburger__button:after{
-  bottom: 0;
+	bottom: 0;
 }
 
 .hamburger__button:focus{
-  outline: none;
+	outline: none;
 }
 
 .hamburger__label{
-  margin-top: -.1em;
-  top: 50%;
+	margin-top: -.1em;
+	top: 50%;
 }
 
 /* activated state */
 
 .js-menu_activated{
-  overflow: hidden;
+	overflow: hidden;
 }
 
 .js-menu_activated .menu{
-  height: 100%;
-  transform: translate3d(0, 0, 0);
-  opacity: 1;
+	height: 100%;
+	transform: translate3d(0, 0, 0);
+	opacity: 1;
 }
 
 .js-menu_activated .hamburger:before{
-  width: 100vh;
-  height: 100vh;
-  transform: translate3d(-50vh, -50vh, 0) scale(5);
+	width: 100vh;
+	height: 100vh;
+	transform: translate3d(-50vh, -50vh, 0) scale(5);
 }
 
 .js-menu_activated .menu__list{
-  display: block;
+	display: block;
 }
 
 .js-menu_activated .hamburger__button:before{
-  transform: translate3d(0, -50%, 0) rotate(45deg);
-  top: 50%;
+	transform: translate3d(0, -50%, 0) rotate(45deg);
+	top: 50%;
 }
 
 .js-menu_activated .hamburger__button:after{
-  transform: translate3d(0, -50%, 0) rotate(135deg);
-  top: 50%;
+	transform: translate3d(0, -50%, 0) rotate(135deg);
+	top: 50%;
 }
 
 .js-menu_activated .hamburger__label{
-  transform: rotate(-45deg) translate3d(-5.71429px,-6px,0);
-  opacity: 0;
+	transform: rotate(-45deg) translate3d(-5.71429px,-6px,0);
+	opacity: 0;
 }
 
 /*
@@ -261,37 +261,37 @@ LEVEL 3. MOBILE ANIMATION STYLES
 */
 
 .menu{
-  transition: opacity .2s ease-out;
+	transition: opacity .2s ease-out;
 }
 
 .js-menu_activated .menu{
-  will-change: opacity;
-  transition-duration: .2s;
-  transition-delay: .3s;
+	will-change: opacity;
+	transition-duration: .2s;
+	transition-delay: .3s;
 }
 
 .hamburger:before{
-  will-change: width, height;
-  transition: transform .3s cubic-bezier(0.04, -0.1, 0.29, 0.98),
-    width .3s cubic-bezier(0.04, -0.1, 0.29, 0.98),
-    height .3s cubic-bezier(0.04, -0.1, 0.29, 0.98);
+	will-change: width, height;
+	transition: transform .3s cubic-bezier(0.04, -0.1, 0.29, 0.98),
+	width .3s cubic-bezier(0.04, -0.1, 0.29, 0.98),
+	height .3s cubic-bezier(0.04, -0.1, 0.29, 0.98);
 }
 
 .js-menu_activated .hamburger:before{
-  transition-duration: 1s;
+	transition-duration: 1s;
 }
 
 .hamburger__button:before, .hamburger__button:after{
-  transition-property: transform;
+	transition-property: transform;
 }
 
 .hamburger__button:before, .hamburger__button:after, .hamburger__label{
-  transition-timing-function: ease;
-  transition-duration: .15s;
+	transition-timing-function: ease;
+	transition-duration: .15s;
 }
 
 .hamburger__label{
-  transition-property: transform, opacity;
+	transition-property: transform, opacity;
 }
 
 /*
@@ -301,19 +301,19 @@ SETTINGS
 */
 
 :root{
-  --colorBlack: #282828;
-  --colorWhite: #fff;
-  --colorGray: #f0f0f0;
-  --colorMain: #7bc3e1;
-  --colorMainLight: #8491d8;
-  --colorMainDark: #233286;
+	--colorBlack: #282828;
+	--colorWhite: #fff;
+	--colorGray: #f0f0f0;
+	--colorMain: #7bc3e1;
+	--colorMainLight: #8491d8;
+	--colorMainDark: #233286;
 }
 
 /* -----------------------------------
 ...............LAYOUT.................
 ----------------------------------- */
 img{
-  width: 80%;
+	width: 80%;
 	max-width: 300px;
 }
 .logobox{
@@ -341,16 +341,47 @@ img{
 ................MISC..................
 ----------------------------------- */
 ::-webkit-scrollbar {
-  width: 10px;
+	width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+	background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(#7bc3e1,#54a4c6);
+	background: linear-gradient(#7bc3e1,#54a4c6);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(#54a4c6,#7bc3e1);
+	background: linear-gradient(#54a4c6,#7bc3e1);
+}
+@keyframes bounce {
+	0%, 100%, 20%, 50%, 80% {
+		-webkit-transform: translateY(0);
+		-ms-transform:     translateY(0);
+		transform:         translateY(0)
+	}
+	40% {
+		-webkit-transform: translateY(-30px);
+		-ms-transform:     translateY(-30px);
+		transform:         translateY(-30px)
+	}
+	60% {
+		-webkit-transform: translateY(-15px);
+		-ms-transform:     translateY(-15px);
+		transform:         translateY(-15px)
+	}
+}
+#header-img{
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+#header-img:hover {
+	animation-name: bounce;
+	-moz-animation-name: bounce;
 }
 /* -----------------------------------
 ...........MEDIA QUERIES..............

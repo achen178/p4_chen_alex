@@ -75,7 +75,7 @@ nav a{
 	transition: border .5s cubic-bezier(.56,.02,.51,.99);
 }
 .link:hover{
-	border-left: 30px #e1737a solid;
+	border-left: 30px #7bc3e1 solid;
 }
 
 .list{
@@ -301,7 +301,7 @@ SETTINGS
   --colorBlack: #282828;
   --colorWhite: #fff;
   --colorGray: #f0f0f0;
-  --colorMain: #7bc3e1;
+  --colorMain: #e1737a;
   --colorMainLight: #8491d8;
   --colorMainDark: #233286;
 }
