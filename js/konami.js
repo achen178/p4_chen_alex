@@ -41,8 +41,47 @@ function activateCheats() {
   let root = document.documentElement;
   root.style.setProperty('--miloticBlue', "#96a6d1");
   root.style.setProperty('--miloticPink', "#efbd5a");
-  var miloticPink = "#fff";
   document.getElementById("logo").src="imgs/logo-shiny.png";
-  document.getElementById("header-img").src="imgs/header-shiny.png";
-  document.getElementById("animated").src="https://img.pokemondb.net/sprites/black-white/anim/shiny/milotic.gif";
+  if($("#header-img").length){
+    $("#header-img").attr("src","imgs/header-shiny.png");
+  }
+  if($("#animate-img").length){
+    $("#animate-img").attr("src","https://img.pokemondb.net/sprites/black-white/anim/shiny/milotic.gif");
+  }
+  if($("#milotic-gif").length){
+    $("#milotic-gif").attr("src","https://upload.pokeheroes.com/img/avatar/261431961.gif?t=1526627923");
+  }
+  console.log(miloticPink);
+  miloticPink = "#efbd5a";
+  console.log(miloticPink);
+  var chart = new CanvasJS.Chart("chartContainer", {
+  	animationEnabled: true,
+    title:{
+  		text:"Base Stats",
+      fontFamily: "Lato",
+      horizontalAlign: "right"
+  	},
+  	axisX:{
+  		interval: 1
+  	},
+  	axisY2:{
+  		gridColor: "rgba(1,77,101,.1)",
+  	},
+  	data: [{
+      indexLabelFontFamily: "Lato",
+  		type: "bar",
+  		name: "stats",
+  		axisYType: "secondary",
+  		color: miloticPink,
+  		dataPoints: [
+  			{ y: 95, label: "HP" },
+  			{ y: 60, label: "Attack" },
+  			{ y: 79, label: "Defense" },
+  			{ y: 100, label: "Sp. Atk" },
+  			{ y: 125, label: "Sp. Def" },
+  			{ y: 81, label: "Speed" },
+  		]
+  	}]
+  });
+  chart.render();
 }
