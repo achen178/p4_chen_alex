@@ -1,3 +1,4 @@
+var miloticPink = "#e1737a"
 // start-----M O V I N G -- L E T T E R S -------
 // Wrap every letter in a span
 // https://tobiasahlin.com/moving-letters/#16
@@ -77,6 +78,7 @@ anime.timeline({loop: false})
 })();
 // end-----N A V I G A T I O N -------
 // start---B A R --- C H A R T -------
+//https://canvasjs.com/html5-javascript-bar-chart/
 window.onload = function () {
 
 var chart = new CanvasJS.Chart("chartContainer", {
@@ -97,7 +99,7 @@ var chart = new CanvasJS.Chart("chartContainer", {
 		type: "bar",
 		name: "stats",
 		axisYType: "secondary",
-		color: "#e1737a",
+		color: miloticPink,
 		dataPoints: [
 			{ y: 95, label: "HP" },
 			{ y: 60, label: "Attack" },

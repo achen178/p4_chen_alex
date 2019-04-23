@@ -11,7 +11,7 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 ...............HEADER.................
 ----------------------------------- */
 body{
-  background: #e1737a;
+  background: var(--miloticPink);
   background-position: center;
   background-size: cover;
   height: 100vh;
@@ -47,7 +47,8 @@ header{
   justify-content: center;
   align-items: flex-start;
   padding: 0 2px 2px 2px;
-  border-radius: 0 0 400px 400px
+  border-radius: 0 0 400px 400px;
+  z-index: 900;
 }
 #logo{
   width: 60px;
@@ -82,11 +83,11 @@ nav a{
 .link{
   color: inherit;
   padding-left: 30px;
-  border: 0 #e1737a solid;
+  border: 0 var(--miloticPink) solid;
   transition: border .5s cubic-bezier(.56,.02,.51,.99);
 }
 .link:hover{
-  border-left: 30px #e1737a solid;
+  border-left: 30px var(--miloticPink) solid;
 }
 
 .list{
@@ -309,10 +310,12 @@ SETTINGS
 */
 
 :root{
+  --miloticPink: #e1737a;
+  --miloticBlue: #7bc3e1;
   --colorBlack: #282828;
   --colorWhite: #fff;
   --colorGray: #f0f0f0;
-  --colorMain: #7bc3e1;
+  --colorMain: var(--miloticBlue);
   --colorMainLight: #8491d8;
   --colorMainDark: #233286;
 }
@@ -330,11 +333,11 @@ section{
   margin: 3rem auto;
   padding: 5%;
   border-radius: 2rem;
-  box-shadow: 0px 0px #7bc3e1;
+  box-shadow: 0px 0px var(--miloticBlue);
   transition: box-shadow .3s cubic-bezier(.56,.02,.51,.99);
 }
 section:hover{
-  box-shadow: 5px 5px #7bc3e1;
+  box-shadow: 5px 5px var(--miloticBlue);
 }
 .table-container{
   display: flex;
@@ -381,11 +384,11 @@ p{
   color: #282828;
 }
 h2{
-  color: #7bc3e1;
+  color: var(--miloticBlue);
   text-align: center;
 }
 h4{
-  color: #e1737a;
+  color: var(--miloticPink);
 }
 /* -----------------------------------
 ................MISC..................
@@ -397,10 +400,10 @@ h4{
   background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(#7bc3e1,#54a4c6);
+  background: linear-gradient(var(--miloticBlue),#54a4c6);
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(#54a4c6,#7bc3e1);
+  background: linear-gradient(#54a4c6,var(--miloticBlue));
 }
 /* -----------------------------------
 ...........MEDIA QUERIES..............

@@ -39,7 +39,7 @@ header{
 header h2{
 	font-family: "Noto Sans JP", sans-serif;
 	font-weight: 700;
-	color: #e1737a;
+	color: var(--miloticPink);
 	font-size: 1em;
 	letter-spacing: 1em;
 	margin-left: .5em;
@@ -74,11 +74,11 @@ nav a{
 .link{
 	color: inherit;
 	padding-left: 30px;
-	border: 0 #e1737a solid;
+	border: 0 var(--miloticPink) solid;
 	transition: border .5s cubic-bezier(.56,.02,.51,.99);
 }
 .link:hover{
-	border-left: 30px #e1737a solid;
+	border-left: 30px var(--miloticPink) solid;
 }
 
 .list{
@@ -301,10 +301,12 @@ SETTINGS
 */
 
 :root{
+  --miloticPink: #e1737a;
+  --miloticBlue: #7bc3e1;
 	--colorBlack: #282828;
 	--colorWhite: #fff;
 	--colorGray: #f0f0f0;
-	--colorMain: #7bc3e1;
+	--colorMain: var(--miloticBlue);
 	--colorMainLight: #8491d8;
 	--colorMainDark: #233286;
 }
@@ -326,7 +328,8 @@ img{
 	justify-content: center;
 	align-items: flex-start;
 	padding: 0 2px 2px 2px;
-	border-radius: 0 0 400px 400px
+	border-radius: 0 0 400px 400px;
+  z-index: 900;
 }
 #logo{
 	width: 60px;
@@ -347,10 +350,10 @@ img{
 	background: #f1f1f1;
 }
 ::-webkit-scrollbar-thumb {
-	background: linear-gradient(#7bc3e1,#54a4c6);
+	background: linear-gradient(var(--miloticBlue),#54a4c6);
 }
 ::-webkit-scrollbar-thumb:hover {
-	background: linear-gradient(#54a4c6,#7bc3e1);
+	background: linear-gradient(#54a4c6,var(--miloticBlue));
 }
 @keyframes bounce {
 	0%, 100%, 20%, 50%, 80% {

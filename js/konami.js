@@ -38,5 +38,11 @@ document.addEventListener('keydown', function(e) {
 });
 
 function activateCheats() {
-  $(this).html().replace("#333","#f2f2f2")
+  let root = document.documentElement;
+  root.style.setProperty('--miloticBlue', "#96a6d1");
+  root.style.setProperty('--miloticPink', "#efbd5a");
+  var miloticPink = "#fff";
+  document.getElementById("logo").src="imgs/logo-shiny.png";
+  document.getElementById("header-img").src="imgs/header-shiny.png";
+  document.getElementById("animated").src="https://img.pokemondb.net/sprites/black-white/anim/shiny/milotic.gif";
 }
